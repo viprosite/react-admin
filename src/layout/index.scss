@@ -1,0 +1,51 @@
+@import '@/styles/variables.scss';
+
+.layout__container{
+    display: flex;
+    height: 100%;
+    .menuBar__container{
+        transition: .3s;
+        padding: 10px 0;
+        border-right: 1px solid rgba(5, 5, 5, 0.06);
+        .logo{
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span{
+                margin-top: 8px;
+                font-weight: bold;
+            }
+        }
+        .toggle__btn{
+            padding: 10px;
+            background-color: #fafafa;
+            cursor: pointer;
+            
+        }
+        .ant-menu{
+            border: none;
+        }
+    }
+    .right__content{
+        flex: 1;
+        .topBar__container{
+            display: flex;
+            align-items: center;
+            height: 64px;
+            padding: 0 20px;
+            .right{
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                .ant-dropdown-menu{
+                    .ant-dropdown-menu-item:first-child{
+                        cursor: default;
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}
